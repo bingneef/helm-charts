@@ -387,7 +387,7 @@ spec:
         {{- end }}
         {{- if .Values.extraEnvFrom }}
         envFrom:
-          {{- toYaml .Values.extraEnvFrom | nindent 8 }}
+          {{- toYaml .Values.extraEnvFrom | nindent 10 }}
         {{- end }}
         tty: true
       {{- with .Values.nodeSelector }}
